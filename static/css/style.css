@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html, body {
+    font-family: Ubuntu, Arial;
+    height: 100%;
+    width: 100%;
+}
+.menu__mobile {
+    align-items: center;
+    background-color: none;
+    color: #1edd14;
+    cursor: pointer;
+    display: none;
+    font-size: 2rem;
+    height: 35px;
+    justify-content: center;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    transition: .5s ease-in-out;
+    width: 35px;
+    z-index: 10;
+}
+
+#header {
+    background-color: #021124;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto; /*rolagem autmoática */
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    transition: all .5s ease-in-out;
+    width: 300px;
+    z-index: 997;
+}
+
+.header__tsilva {
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    width: 120px;
+}
+.header__title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.header__social :where(ul) {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0 0;
+    transition: .3s;
+}
+
+.header__social__link {
+    background: #212431;
+    border-radius: 50%;
+    color: white;
+    padding: .5rem .7rem;
+    text-decoration: none;
+    transition: .3s;
+}
+.header__social__link:hover {
+    background: #149ddd;
+}
+/* Menu */
+.nav__menu {
+    padding: 1.5rem;
+}
+.nav__menu :where(li) {
+    align-items: center;
+    display: flex;
+}
+.nav-item i {
+    color: #a8a9b4;
+}
+.nav-item a, 
+.nav-item a:focus {
+    color: #a8a9b4;
+    font-size: 1rem;
+    transition: .3s;
+}
+.nav-item a i, 
+.nav-item a:focus i {
+    color: #6f7180;
+    font-size: 1.5rem;
+    padding: .8rem;
+}
+.nav-item a:hover,
+.nav-item .active,
+.nav-item .active:hover,
+.nav-item:hover a {
+    color: white;
+    text-decoration: none;
+}
+.nav-item a:hover i,
+.nav-item .active i,
+.nav-item .active:focus,
+.nav-item:hover i {
+    color: #149ddd;
+}
+.menu__nav__active {
+    overflow: hidden;
+}
+.menu__nav__active #header {
+    left: 0;
+}
+
+/* Main */
+#main {
+    margin-left: 300px;
+}
+#inicio {
+    background: url('../img/capa_portifolio.svg') no-repeat center / cover;
+    background-attachment: fixed;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+}
+.text-shadow {
+    text-shadow: 4px 4px 10px #000;
+}
+.main__title {
+    font-size: 6rem;
+}
+.main__subtitle {
+    color: #1edd14;
+    font-size: 1.5rem;
+}
+
+#arraste {
+    width: 9rem;
+}
+#arraste a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section__bg {
+    background-color: #ecf9eb;
+}
+
+/* skills */
+.skills__header {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    vertical-align: middle;
+}
+.skills__img {
+    width: 20px;
+}
+
+/* formacao */
+.formacao__item {
+    border-left: 2px solid #1edd14;
+    margin-top: -2px;
+    padding: 0 0 20px 20px;
+    position: relative;
+}
+.formacao__item h4 {
+    color: #050d18;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.formacao__item h5 {
+    background-color: #e4edf9;
+    display: inline-block;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+.formacao__item::before {
+    background-color: #fff;
+    border: 2px solid #1edd14;
+    border-radius: 50%;
+    content:"";
+    left: -9px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+}
+
+/* portifolio */
+.carousel-indicators {
+    bottom: -35px;
+}
+.carousel-control-prev {
+    margin-left: -60px;
+}
+.carousel-control-next {
+    margin-right: -60px;
+}
+
+/* estilização da barra lateral de scroll */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+*::-webkit-scrollbar-track {
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #1edd14;
+}
+
+@media screen 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .menu__mobile {
+        display: flex;
+    }
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    
+    }
+    .main__title {
+        font-size: 3rem;
+    }
+    .main__subtitle {
+        font-size: 1rem;
+    }
+
+}
