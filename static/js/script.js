@@ -21,3 +21,24 @@ navItem.forEach(item => {
         }
     })
 })
+
+//animando todos os itens que tiverem o atributo data-anime
+
+const item = document.querySelectorAll('[data-anime]');
+
+const animeScroll = () => {
+    const windowTop = window.scrollY + window.innerHeight * .85;
+    item.forEach(element => {
+        if (windowTop > element.offsetTop) {
+            element.classList.add('animate');
+        } else {
+            element.classList.remove('animate');
+        }
+        console.log(windowTop);
+        console.log(element.offsetTop);
+    });
+}
+
+window.addEventListener('scroll', () => {
+    animeScroll();
+})

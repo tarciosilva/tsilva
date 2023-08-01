@@ -63,7 +63,7 @@
     </aside>
     <main id="main">
         <!-- HOME -->
-        <section id="inicio" class="row m-0 p-0">
+        <section class="row m-0 p-0" id="inicio">
             <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
                 <img class="w-100" src="../static/img/tsilva.svg" alt="">
                 <!-- <h2 class="text-white text-shadow main__title">Tarcio Silva</h2> -->
@@ -78,9 +78,9 @@
             </div>
         </section>
         <!-- SOBRE -->
-        <section id="sobre" class="container mt-3 p-5">
+        <section class="container mt-3 p-5" id="sobre">
             <div class="row w-100 p-3">
-                <div class="col-md-12">
+                <div class="col-md-12" data-anime="down">
                     <h2 class="pt-3">Sobre</h2>
                     <p>
                         Olá, sou Bacharel em Ciência da Computação com especialização em análise de dados e Python,
@@ -94,9 +94,9 @@
                 <div class="row mt-4">
                     <div class="col-md-4">
                         <img src="../static/img/fotoSite.png" alt="Foto de Perfil - Tarcio Silva"
-                            class="img-fluid shadow">
+                            class="img-fluid shadow" data-anime="left">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8" data-anime="right">
                         <h3>Supervisor de Operações Logísticas</h3>
                         <p>
                             Atualmente surpevisiono as atividades de distribuição e faço a gestão de frota e pessoal
@@ -150,9 +150,9 @@
         <!-- SKILLS -->
         <section class="mt-5 p-5 section__bg" id="skills">
             <div class="container pb-5">
-                <h2 class="pt-5">Skills</h2>
+                <h2 class="pt-5" data-anime="down">Skills</h2>
 
-                <p>
+                <p data-anime="up">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis
@@ -167,8 +167,8 @@
                         </div>
 
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 90%">90%</div>
+                            aria-valuemin="0" aria-valuemax="100" >
+                            <div class="progress-bar" style="width: 90%" data-anime="left">90%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/css.png" alt="">
@@ -176,7 +176,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="50"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 85%">85%</div>
+                            <div class="progress-bar" style="width: 85%" data-anime="left">85%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/js.png" alt="">
@@ -184,7 +184,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="45"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 70%">70%</div>
+                            <div class="progress-bar" style="width: 70%" data-anime="left">70%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/python.png" alt="">
@@ -192,7 +192,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 85%">85%</div>
+                            <div class="progress-bar" style="width: 85%" data-anime="left">85%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/dart.png" alt="">
@@ -200,7 +200,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%">15%</div>
+                            <div class="progress-bar" style="width: 15%" data-anime="left">15%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/swift.png" alt="">
@@ -208,7 +208,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%">15%</div>
+                            <div class="progress-bar" style="width: 15%" data-anime="left">15%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/sql.png" alt="">
@@ -216,7 +216,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 70%">70%</div>
+                            <div class="progress-bar" style="width: 70%" data-anime="left">70%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/r.png" alt="">
@@ -224,7 +224,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 25%">25%</div>
+                            <div class="progress-bar" style="width: 25%" data-anime="left">25%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/c.png" alt="">
@@ -232,7 +232,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 25%">25%</div>
+                            <div class="progress-bar" style="width: 25%" data-anime="left">25%</div>
                         </div>
 
                     </div>
@@ -243,7 +243,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%">15%</div>
+                            <div class="progress-bar" style="width: 15%" data-anime="left">15%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/flask.png" alt="">
@@ -251,7 +251,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 10%">10%</div>
+                            <div class="progress-bar" style="width: 10%" data-anime="left">10%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/flutter.png" alt="">
@@ -259,7 +259,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%">15%</div>
+                            <div class="progress-bar" style="width: 15%" data-anime="left">15%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/kotlin.png" alt="">
@@ -267,7 +267,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%">15%</div>
+                            <div class="progress-bar" style="width: 15%" data-anime="left">15%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/node.png" alt="">
@@ -275,7 +275,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 15%">15%</div>
+                            <div class="progress-bar" style="width: 15%" data-anime="left">15%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/postegre.png" alt="">
@@ -283,7 +283,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 70%">70%</div>
+                            <div class="progress-bar" style="width: 70%" data-anime="left">70%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/react.png" alt="">
@@ -291,7 +291,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 25%">25%</div>
+                            <div class="progress-bar" style="width: 25%" data-anime="left">25%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/git.png" alt="">
@@ -299,7 +299,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 85%">85%</div>
+                            <div class="progress-bar" style="width: 85%" data-anime="left">85%</div>
                         </div>
                         <div class="mt-3 mb-0 skills__header">
                             <img class="skills__img" src="../static/img/skills/deploy.png" alt="">
@@ -307,7 +307,7 @@
                         </div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 45%">45%</div>
+                            <div class="progress-bar" style="width: 45%" data-anime="left">45%</div>
                         </div>
                     </div>
 
@@ -318,34 +318,34 @@
                         <p class="mt-3 mb-0">Inglês</p>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 75%">75%</div>
+                            <div class="progress-bar" style="width: 75%" data-anime="left">75%</div>
                         </div>
                         <p class="mt-3 mb-0">Português</p>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 98%">98%</div>
+                            <div class="progress-bar" style="width: 98%" data-anime="left">98%</div>
                         </div>
                         <p class="mt-3 mb-0">Comunicação</p>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 95%">95%</div>
+                            <div class="progress-bar" style="width: 95%" data-anime="left">95%</div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <p class="mt-3 mb-0">Trabalho em equipe</p>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 90%">90%</div>
+                            <div class="progress-bar" style="width: 90%" data-anime="left">90%</div>
                         </div>
                         <p class="mt-3 mb-0">Proatividade</p>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 95%">95%</div>
+                            <div class="progress-bar" style="width: 95%" data-anime="left">95%</div>
                         </div>
                         <p class="mt-3 mb-0">Atenção aos detalhes</p>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
                             aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 90%">90%</div>
+                            <div class="progress-bar" style="width: 90%" data-anime="left">90%</div>
                         </div>
                     </div>
 
@@ -361,13 +361,13 @@
 
                 <div class="row">
                     <div class="col-md-6 w-75 p-5 m-5 mt-0">
-                        <div class="formacao__item">
+                        <div class="formacao__item" data-anime="up">
                             <h4>Bacharelado em Ciência da Computação</h4>
                             <h5>2012 - 2017</h5>
                             <p><em>Centro Universitário de João Pessoa - UNIPÊ</em></p>
                             <p>Curso de graduação em Ciência da Computação</p>
                         </div>
-                        <div class="formacao__item">
+                        <div class="formacao__item" data-anime="up">
                             <h4>Formação em DataScience</h4>
                             <h5>2022 - 2022</h5>
                             <p><em>Ada</em></p>
@@ -379,7 +379,7 @@
                                 com certificados extras em softskills.
                             </p>
                         </div>
-                        <div class="formacao__item">
+                        <div class="formacao__item" data-anime="up">
                             <h4>Especialização em Desenvolvimento FrontEnd</h4>
                             <h5>2023 - 2023</h5>
                             <p><em>Alura</em></p>
@@ -397,7 +397,7 @@
         <section class="section__bg mt-5 p-3" id="portifolio">
             <div class="container pb-5 pt-5 p-5">
                 <h2 class="pb-4">Portifólio</h2>
-                <div id="carousel-portifolio" class="carousel carousel-dark slide">
+                <div id="carousel-portifolio" class="carousel carousel-dark slide" data-anime="left">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carousel-portifolio" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -547,7 +547,7 @@
                 <h2 class="pt-3 pb-3">Contato</h2>
                 <div class="row">
                     <div class="col-md-5">
-                        <div class="card p-5 shadow border-0">
+                        <div class="card p-5 shadow border-0" data-anime="left">
                             <div class="endereco">
                                 <h4><i class="bi bi-geo-alt"></i>Localização</h4>
                                 <p>João Pessaoa / PB</p>
@@ -564,7 +564,7 @@
                         </div>
                     </div>
                     <div class="col-md-7 mt-3 mt-md-0">
-                        <div class="card p-5 h-100 shadow border-0">
+                        <div class="card p-5 h-100 shadow border-0" data-anime="right">
                             <form class="row g-3">
                                 <div class="col-md-6">
                                     <label for="inputNome" class="form-label">Nome: </label>
@@ -578,7 +578,7 @@
                                 </div>
                                 <div class="col-12">
                                     <label for="inputMensagem" class="form-label">Mensagem: </label>
-                                    <textarea type="text" class="form-control" id="inputMensagem" placeholder="Digite sua mensagem" rows="11"  required>
+                                    <textarea type="text" class="form-control" id="inputMensagem" placeholder="Digite sua mensagem" rows="11" name="mensagem"  required>
                                 
                                                                     </textarea>
                                 </div>
