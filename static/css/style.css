@@ -222,10 +222,33 @@ html, body {
 .carousel-control-next {
     margin-right: -60px;
 }
+/* botao enviando */
+#btn-enviando {
+    display: none;
+}
+.mensagem__flash {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 5px;
+    top: 30px;
+    transition: .5s ease-in-out;
+    z-index: 10;
+}
+.mensagem__flash > div {
+    display: flex;
+    position: relative;
+}
+.mensagem__flash :is(li) {
+    list-style: none;
+    padding-left: 1rem;
+}
 
 /* estilização da barra lateral de scroll */
 *::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
+    size: 10px;
 }
 *::-webkit-scrollbar-track {
     width: 12px;

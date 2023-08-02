@@ -42,3 +42,16 @@ const animeScroll = () => {
 window.addEventListener('scroll', () => {
     animeScroll();
 })
+
+const btnEnviar = document.querySelector('#btn-enviar');
+const btnEnviando = document.querySelector('#btn-enviando');
+
+btnEnviar.addEventListener('click', () => {
+    btnEnviando.style.display = 'block';
+    btnEnviar.style.display = 'none';
+    
+})
+
+setTimeout(() => {
+    document.querySelector('.mensagem__flash').style.display = 'none';
+}, 5000);

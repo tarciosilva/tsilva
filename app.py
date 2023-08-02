@@ -19,8 +19,8 @@ mail = Mail(app)
 
 class Contact:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome,
-        self.email = email,
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
 
 
@@ -32,14 +32,14 @@ def index():
 def send():
     if request.method=='POST':
         contact = Contact(
-            request.form['name'],
+            request.form['nome'],
             request.form['email'],
-            request.form['messagem']
+            request.form['mensagem']
         )
         msg = Message(
-            subject='Contato do Site - '+contact.nome,
+            subject=f'Contato do Site - {contact.nome}',
             sender=('Site Contatos', config.email),
-            recipients=['tarciopereirasilva@outlook.com', 'tarciopsilva@correios.com.br'],
+            recipients=['tarciopereirasilva@outlook.com'],
             body=f"""
                 teste de email do portifocio de {contact.nome} sendo
                 enviado a partir do email {contact.email} com a mensagem
